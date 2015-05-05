@@ -1,0 +1,30 @@
+<h1>Welcome to my Travel site</h1>
+<p>It is the best travel site</p>
+
+<p><%= @homeland %></p>
+
+<ul>
+	<% @countries.each do |country| %>
+	 <li><%= country %>
+	<% end %>
+</ul>
+
+<!-- <p>
+<%= image_tag "naija.jpg", :alt => "Lagos", :height => "400" %>
+</p>
+
+<p>
+	<%= image_tag "nigeria.jpg", :alt => "logo", :height => "300" %>
+</p>
+<p>
+	<%= image_tag "france.jpg", :alt => "effiel tower", :height => "250" %>
+</p>
+<p>
+	<%= image_tag "ghana.jpg", :alt => "ghana beauties", :height => "200" %>
+</p> -->
+
+<p>
+	<% @images.each do |image| %>
+   <%= image_tag image, :alt => "Picture missing", :height => "400" %>
+  <% end %>
+</p>
