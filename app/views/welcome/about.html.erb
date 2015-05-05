@@ -12,3 +12,9 @@
 <% if @size > 12 %>
  <p>I have a huge feet!</p>
 <% end %>
+
+<%= link_to "Yellow", {controller: "welcome", action: "about", color: "yellow"}, class: "btn btn-warning" %>
+
+<%= link_to "red", about_path(color: "red"), class: "btn btn-danger" %>
+
+<%= link_to "blue", about_path(color: "blue"), class: "btn btn-primary" %>

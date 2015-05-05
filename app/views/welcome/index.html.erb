@@ -25,6 +25,6 @@
 
 <p>
 	<% @images.each do |image| %>
-   <%= image_tag image, :alt => "Picture missing", :height => "400" %>
+   <%= image_tag image, :alt => "Picture missing", class: "img-responsive" %>
   <% end %>
 </p>
